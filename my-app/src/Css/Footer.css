@@ -1,0 +1,180 @@
+.f_container{
+   width: 100%;
+   height: 250px;
+   margin-top: 50px;
+   padding: 0 230px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* border: 2px solid black; */
+}
+
+.f_content{
+   width: 100%;
+   height: 250px;
+   display: flex;
+   gap: 20px;
+   /* border: 1px solid black; */
+}
+
+.f_first{
+   width: 400px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   /* border: 1px solid black; */
+}
+
+.f_second{
+   width: 345px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   /* border: 1px solid black; */
+}
+
+.f_third{
+   width: 200px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   /* border: 1px solid black; */
+}
+
+.f_four{
+   width: 200px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   /* border: 1px solid black; */
+}
+
+.f_first>h4,.f_second>h4,.f_third>h4,.f_four>h4{
+   margin-bottom: 5px;
+}
+
+.f_first>p,.f_second>p,.f_third>p,.f_four>p{
+   font-size: 14px;
+   opacity: 0.6;
+}
+
+.f_payment{
+   width: 100%;
+   height: 35px;
+   padding: 0 230px;
+   display: flex;
+   position: relative;
+   /* border: 2px solid black; */
+}
+
+.f_payment>img{
+   height: 50%;
+   width: 50%;
+   object-fit: contain;
+   position: absolute;
+   right: -80px;
+}
+
+
+@media screen and (max-width:425px) {
+   .f_container{
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 2px solid black; */
+   }
+   
+   .f_content{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      /* border: 1px solid black; */
+   }
+
+   .f_first{
+      width: 100%;
+      /* border: 1px solid black; */
+   }
+   
+   .f_second{
+      width: 100%;
+      /* border: 1px solid black; */
+   }
+
+   .f_third{
+      width: fit-content;
+      /* border: 1px solid black; */
+   }
+   
+   .f_four{
+      width: fit-content;
+      /* border: 1px solid black; */
+   }
+   .f_payment{
+      width: 100%;
+      height: 35px;
+      padding: 0 0px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-top: 20px;
+      /* border: 2px solid black; */
+   }
+   
+   .f_payment>img{
+      height: 70%;
+      width: 70%;
+      object-fit: contain;
+      position: absolute;
+      left: 0px;
+   }
+}
+
+@media screen and (max-width:375px) {
+   .f_container{
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 2px solid black; */
+   }
+   
+   .f_content{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      /* border: 1px solid black; */
+   }
+
+   .f_first{
+      width: 100%;
+      /* border: 1px solid black; */
+   }
+   
+   .f_second{
+      width: 100%;
+      /* border: 1px solid black; */
+   }
+
+   .f_third{
+      width: fit-content;
+      /* border: 1px solid black; */
+   }
+   
+   .f_four{
+      width: fit-content;
+      /* border: 1px solid black; */
+   }
+}

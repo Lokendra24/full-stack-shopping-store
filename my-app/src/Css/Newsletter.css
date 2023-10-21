@@ -1,0 +1,152 @@
+.nl_container{
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.nl_image{
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid red; */
+}
+
+.nl_image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nl_inner{
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 2px solid red; */
+}
+
+.nl_inner>p:nth-child(1){
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.nl_inner>h4{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nl_inner>div>input{
+    width: 250px;
+    height: 35px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.nl_inner>div>button{
+    width: 100px;
+    height: 35px;
+    padding: 0 10px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+.nl_inner>p{
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.nl_icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nl_icon{
+    height: 50px ;
+    width: 50px ;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nl_icon:hover,.nl_inner>div>button:hover{
+    scale: 1.1;
+    transition: 0.4s;
+}
+
+@media screen and (max-width:425px) {
+    
+    .nl_inner{
+        position: absolute;
+        width: 90%;
+    }
+
+    .nl_inner>p:nth-child(1){
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.6;
+        text-transform: uppercase;
+    }
+    
+    .nl_inner>h4{
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .nl_inner>div>input{
+        width: 200px;
+        height: 30px;
+        padding: 0 5px;
+        outline: none;
+    }
+    
+    .nl_inner>div>button{
+        width: 70px;
+        height: 30px;
+        padding: 0 5px;
+        margin-left: 8px;
+        cursor: pointer;
+        font-weight: 400;
+        background-color: blueviolet;
+        color: aliceblue;
+        border: 1px solid black;
+    }
+
+    .nl_inner>p{
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.6;
+    }
+
+    .nl_icon{
+        height: 35px ;
+        width: 35px ;
+        border-radius: 50%;
+        color: white;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+}

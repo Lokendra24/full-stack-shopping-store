@@ -1,0 +1,146 @@
+.pdtls_container{
+    width: 100%;
+    padding: 0 230px;
+    margin-top: 50px;
+}
+
+.pdtls_content{
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+
+.pdtls_image{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.pdtls_image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: rgba(209, 209, 209, 0.87);
+    border-radius: 5px;
+}
+
+.pdtls_details{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    /* border: 1px solid black; */
+}
+
+.pdtls_buttons{
+    display: flex;
+    padding: 20px 0;
+}
+
+.pdtls_icon{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.pdtls_details>h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pdtls_details>h3{
+    font-size: 17px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.pdtls_details>p:nth-of-type(1){
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.pdtls_details>p:nth-of-type(2){
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pdtls_details>p>span{
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.pdtls_icon>p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pdtls_buttons>button:nth-child(1){
+    height: 35px;
+    width: 30px;
+    border: 1px solid rgba(180, 175, 175, 0.918);
+    cursor: pointer;
+}
+
+.pdtls_buttons>button:nth-child(2){
+    height: 35px;
+    width: 45px;
+    border: 1px solid rgba(180, 175, 175, 0.918);
+    border-left: none;
+    border-right: none;
+}
+
+.pdtls_buttons>button:nth-child(3){
+    height: 35px;
+    width: 30px;
+    border: 1px solid rgba(180, 175, 175, 0.918);
+    cursor: pointer;
+}
+
+.pdtls_buttons>button:nth-child(4){
+    height: 35px;
+    width: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    background-color: blueviolet;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgba(180, 175, 175, 0.918);
+}
+
+.pdtls_buttons>button:hover:nth-child(4){
+    scale: 1.05;
+    transition: 0.4s;
+}
+
+.related_container{
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width:425px){
+    .pdtls_container{
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    .pdtls_content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .related_container{
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
